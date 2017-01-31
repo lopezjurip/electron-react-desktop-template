@@ -1,12 +1,13 @@
 import { app, BrowserWindow } from 'electron';
-import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
+// import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
-const isDevMode = process.execPath.match(/[\\/]electron/);
+// const NODE_ENV = process.env.NODE_ENV || 'development';
+// const isDevMode = NODE_ENV === 'development' || process.execPath.match(/[\\/]electron/);
 
 const createWindow = async () => {
   // Create the browser window.

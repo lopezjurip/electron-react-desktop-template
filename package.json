@@ -1,6 +1,6 @@
 {
-  "name": "electron-email",
-  "productName": "electron-email",
+  "name": "myapp",
+  "productName": "myapp",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -28,7 +28,7 @@
       },
       "electronPackagerConfig": {},
       "electronWinstallerConfig": {
-        "name": "electron_email"
+        "name": "my_app"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -37,7 +37,7 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "electronemail"
+        "name": "myapp"
       }
     }
   },

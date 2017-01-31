@@ -18,7 +18,6 @@ export default class extends Component {
     selectedTab: 'welcome',
     showLoader: false,
     showError: false,
-    theme: 'dark',
   }
 
   submit = () => {
@@ -34,7 +33,7 @@ export default class extends Component {
 
   render() {
     return (
-      <Window ref="window" chrome theme={this.state.theme} color="#cc7f29">
+      <Window theme="dark" color="#cc7f29">
         <TitleBar title="My Windows Application" controls />
 
         <NavPane>
