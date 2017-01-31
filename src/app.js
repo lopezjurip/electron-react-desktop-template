@@ -15,12 +15,12 @@ import * as Icons from './assets/icons';
 const routes = [{
   path: '/',
   exact: true,
-  name: 'Home',
+  title: 'Home',
   icon: Icons.welcomeIcon,
   component: Home,
 }, {
   path: '/settings',
-  name: 'Settings',
+  title: 'Settings',
   icon: Icons.formIcon,
   component: Settings,
 }];
@@ -42,7 +42,7 @@ class App extends Component {
           {routes.map(route => (
             <NavPaneItem
               key={route.path}
-              title={route.name}
+              title={route.title}
               icon={route.icon}
               selected={Boolean(matchPath(location.pathname, route.path, {
                 exact: route.exact, strict: route.strict,
